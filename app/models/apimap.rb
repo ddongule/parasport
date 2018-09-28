@@ -1,0 +1,2 @@
+class Apimap < ApplicationRecord
+end

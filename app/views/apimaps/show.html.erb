@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @apimap.name %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @apimap.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @apimap.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_apimap_path(@apimap) %> |
+<%= link_to 'Back', apimaps_path %>
+
+
+

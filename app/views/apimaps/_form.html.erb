@@ -1,0 +1,32 @@
+<%= form_with(model: apimap, local: true) do |form| %>
+  <% if apimap.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(apimap.errors.count, "error") %> prohibited this apimap from being saved:</h2>
+
+      <ul>
+      <% apimap.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :apimap_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude, id: :apimap_latitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude, id: :apimap_longitude %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
