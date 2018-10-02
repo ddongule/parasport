@@ -8,4 +8,7 @@ class HomeController < ApplicationController
   def test 
   end
 
+  def heatmap
+  end
+  
 end

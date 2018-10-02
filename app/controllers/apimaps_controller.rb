@@ -16,6 +16,7 @@ class ApimapsController < ApplicationController
   # GET /apimaps/1.json
   def show
   end
+  
 
   # GET /apimaps/new
   def new
