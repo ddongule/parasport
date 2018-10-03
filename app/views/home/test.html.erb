@@ -19,8 +19,7 @@
       padding: 5px;
       border: 1px solid #999;
   }
-
-   </style>
+  </style>
    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=false"></script>
    <script>
    var map;
@@ -43,7 +42,7 @@
            if (status == google.maps.GeocoderStatus.OK) {
                    var lat = results[0]['geometry']['location']['lat']();
                    var lng = results[0]['geometry']['location']['lng']();
-                   alert(address+"의 위도는 " + lat + " 이며, 경도는" + lng + " 입니다.");
+                   alert(address+" 의 위도는 " + lat + " 이며, 경도는" + lng + " 입니다.");
                    map.setCenter(results[0].geometry.location);    
                    var marker = new google.maps.Marker({
                         map: map,

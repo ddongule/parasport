@@ -2,8 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 * {
-		font-family: "Source Sans Pro", Helvetica, sans-serif !important;
-		font-size: 1rem;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 1.3rem;
 		font-weight: 300;
     line-height: 1.65;
 	}
@@ -13,4 +13,10 @@
 }
 .container h1 {
   font-size: 2.5rem;
+}
+
+.link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: red;
 }

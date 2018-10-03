@@ -1,7 +1,3 @@
-
-<p id="notice"><%= notice %></p>
-
-
 <h1 style="font-size: 30px; text-align: center;">전국 장애인 스포츠 시설</h1>
 
 <div style='width: 100%;'>
@@ -9,14 +5,14 @@
 </div>
 
 <script type="text/javascript">
+
     handler = Gmaps.build('Google');
     handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
       markers = handler.addMarkers(<%=raw @hash.to_json %>);
       handler.bounds.extendWith(markers);
       handler.fitMapToBounds();
       handler.getMap().setZoom(7);
-
-    });
+    });    
 </script>
 
 
@@ -47,6 +43,7 @@
 <br>
 
 <%= link_to 'New Apimap', new_apimap_path %>
+
 
 
 
